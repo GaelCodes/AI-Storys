@@ -1,0 +1,19 @@
+<div class="container d-flex">
+    <section class="col-4 d-inline-flex">
+        <div class="list-group">
+
+            <a *ngFor="let story of stories" [routerLink]="['story', story.id]" routerLinkActive="active" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{story.title}}</h5>
+                </div>
+                <p class="mb-1">{{story.author}}</p>
+                <small>Breve historia creada por IA.</small>
+            </a>
+        </div>
+
+
+    </section>
+    <section class="col-7 d-inline-flex">
+        <router-outlet></router-outlet>
+    </section>
+</div>
