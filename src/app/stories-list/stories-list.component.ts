@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ComponentRef, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { storie } from '../interfaces/storie';
 import { ActivatedRoute, Route } from '@angular/router';
 import { StoriesService } from '../services/stories.service';
+import { StoryComponent } from './story/story.component';
 
 @Component({
   selector: 'app-stories-list',
@@ -17,6 +18,7 @@ export class StoriesListComponent implements OnInit {
     cover: '',
     title: '',
   };
+  @ViewChild('storyComponent') storyComponent!: ComponentRef<StoryComponent>;
 
   constructor(
     private route: ActivatedRoute,
@@ -26,6 +28,10 @@ export class StoriesListComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       this.storiesCategorie = params.get('categorie')!;
+
+      console.log('Categoria: ',this.storiesCategorie);
+
+      this.storiesService.updateCategorie(this.storiesCategorie);
     });
 
     this.stories = this.getStories();

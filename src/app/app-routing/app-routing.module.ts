@@ -11,7 +11,7 @@ const routes: Route[] = [
       {path: 'story/:id', component: StoryComponent},
     ],
   },
-  {path: '', component: StoriesListComponent},
+  {path: '', redirectTo: 'stories-list/regular', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
 ]
 

@@ -8,16 +8,21 @@ import { storie } from '../interfaces/storie';
 export class StoriesService {
 
   storiesURL: string = 'assets/stories-json/';
+  storiesCategorie: string = '';
 
   constructor(private http: HttpClient) { }
 
 
   public getStories(categorie: string){
-    return this.http.get<storie[]>(`${this.storiesURL + "regular/stories-regular.json"}`);
+    return this.http.get<storie[]>(`${this.storiesURL + this.storiesCategorie}/stories-${this.storiesCategorie}.json"`);
   }
 
 
-  public getStory(categorie: string, storyId: number){
-    return this.http.get<storie[]>(`${this.storiesURL + "regular/stories-regular.json"}`);
+  public getStory(storyId: number){
+    return this.http.get<storie>(`${this.storiesURL + this.storiesCategorie}/story-${storyId}.json`);
+  }
+
+  public updateCategorie(categorie: string){
+    this.storiesCategorie = categorie;
   }
 }

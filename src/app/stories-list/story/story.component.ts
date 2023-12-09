@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
 import { storie } from 'src/app/interfaces/storie';
+import { StoriesService } from 'src/app/services/stories.service';
 
 @Component({
   selector: 'app-story',
@@ -17,29 +19,34 @@ export class StoryComponent implements OnInit {
     content: ''
   }
 
-  constructor(private route: ActivatedRoute) {
+  @Input() public categorie: string = '';
+
+  constructor(private route: ActivatedRoute, private storieService: StoriesService) {
    }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
+      console.log('Parametros en story');
+      console.dir(params);
       this.story.id = Number.parseInt(params.get('id')!);
 
-      this.story = this.getStory();
-    })
+      console.log('Story ID: ',this.story.id);
+      this.getStory().subscribe(story=>{
+        this.story = story;
+      });
+    });
+
+    console.log(`Componente iniciado: cat: ${this.categorie} - id: ${this.story.id}`);
+
+    this.getStory().subscribe(story=>{
+      this.story = story;
+    });
   }
 
 
-  private getStory(): storie {
-    // this.storiesService.getStory(this.story.id);
-
-    return {
-      id: 2,
-      title: 'El Susurro del Fantasma',
-      cover: '',
-      author: 'Rodrigo Sombras',
-      content:
-        'En un antiguo manor abandonado, los lugareños aseguran escuchar susurros misteriosos en medio de la noche. Cuando un equipo de investigadores paranormales llega para desentrañar el enigma, descubren que los susurros están relacionados con un trágico amor del pasado. A medida que profundizan, los fantasmas buscan justicia, y la línea entre el mundo de los vivos y los muertos comienza a desdibujarse.',
-    };
+  private getStory(): Observable<storie> {
+    return this.storieService.getStory(this.story.id);
+    
   }
 
 }
