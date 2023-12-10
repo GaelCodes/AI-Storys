@@ -14,10 +14,50 @@ img {
     right: 2em;
 }
 
-.content {
+.content-body {
+    background-color: red;
+    height: 36vh;
     position: absolute;
     top: 20%;
     background-color: hsla(0, 0%, 0%, 0.513);
     border-radius: 2em;
     padding: 1em;
+}
+
+.content-body .content-text {
+    display: block;
+    max-height: 30vh;
+    overflow-y: auto;
+    height: fit-content;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+
+
+/* Firefox */
+
+.content-body .content-text {
+    scrollbar-width: auto;
+    scrollbar-color: #31313165 #97979758;
+}
+
+
+/* Chrome, Edge, and Safari */
+
+.content-body .content-text::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content-body .content-text::-webkit-scrollbar-track {
+    background: #31313165;
+    border-radius: 1em;
+    margin: 1em 1em;
+    padding: 1em;
+}
+
+.content-body .content-text::-webkit-scrollbar-thumb {
+    background-color: #97979758;
+    border-radius: 1em;
+    border: none;
 }
