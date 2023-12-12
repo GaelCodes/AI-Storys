@@ -1,30 +1,31 @@
 [{
-        "id": 1,
-        "title": "El Secreto del Reloj Olvidado",
-        "cover": "",
-        "author": "Valentina Enigma"
-    },
-    {
-        "id": 2,
-        "title": "El Susurro del Fantasma",
-        "cover": "",
-        "author": "Rodrigo Sombras"
-    }, {
-        "id": 3,
-        "title": "El Enigma de las Cartas Anónimas",
-        "cover": "",
-        "author": "Beatriz Intriga"
-    },
-    {
-        "id": 4,
-        "title": "El Cuadro Maldito",
-        "cover": "",
-        "author": "Martín Enigma"
-    },
-    {
-        "id": 5,
-        "title": "El Último Baile de Medianoche",
-        "cover": "",
-        "author": "Isabella Misterio"
-    }
-]
+    "id": 1,
+    "title": "La Isla de los Sueños Perdidos",
+    "cover": "url_de_la_imagen_9.jpg",
+    "author": "Martín Castro",
+    "content": "En medio del océano, existe una isla mágica donde los sueños perdidos encuentran refugio. Aquellos que naufragan en la vida real llegan a esta isla en busca de esperanza y redención..."
+}, {
+    "id": 2,
+    "title": "El Baile de las Luciérnagas",
+    "cover": "url_de_la_imagen_10.jpg",
+    "author": "Laura González",
+    "content": "En una noche mágica, las luciérnagas se reúnen para un baile luminoso en el bosque. Cada destello cuenta una historia única, y aquellos que observan el baile descubren la magia de la naturaleza..."
+}, {
+    "id": 3,
+    "title": "El Laberinto de los Espejos",
+    "cover": "url_de_la_imagen_11.jpg",
+    "author": "Diego Ramos",
+    "content": "Dentro de un antiguo castillo yace un laberinto de espejos mágicos. Quienes se aventuran a través de él descubren reflejos de realidades alternas y enfrentan sus propias verdades ocultas..."
+}, {
+    "id": 4,
+    "title": "El Canto de las Sirenas",
+    "cover": "url_de_la_imagen_12.jpg",
+    "author": "Valentina Díaz",
+    "content": "En alta mar, un marinero escucha el canto irresistible de las sirenas. Mientras lucha contra la fascinación, descubre que el canto tiene el poder de revelar los deseos más profundos de su corazón..."
+}, {
+    "id": 5,
+    "title": "La Ciudad de las Sombras",
+    "cover": "url_de_la_imagen_13.jpg",
+    "author": "Ricardo Ortega",
+    "content": "En una ciudad donde nunca sale el sol, las sombras cobran vida propia. Un detective intrépido se sumerge en la oscuridad para desentrañar un misterio que amenaza con sumir la ciudad en eterna noche..."
+}]

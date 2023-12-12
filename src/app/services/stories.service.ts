@@ -13,8 +13,8 @@ export class StoriesService {
   constructor(private http: HttpClient) { }
 
 
-  public getStories(categorie: string){
-    return this.http.get<storie[]>(`${this.storiesURL + this.storiesCategorie}/stories-${this.storiesCategorie}.json"`);
+  public getStories(){
+    return this.http.get<storie[]>(`${this.storiesURL + this.storiesCategorie}/stories-${this.storiesCategorie}.json`);
   }
 
 

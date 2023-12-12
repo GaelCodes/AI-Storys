@@ -1,30 +1,22 @@
 [{
         "id": 1,
-        "title": "El Secreto del Reloj Olvidado",
-        "cover": "",
-        "author": "Valentina Enigma"
+        "title": "Aventura en la Selva",
+        "cover": "url_de_la_imagen_1.jpg",
+        "author": "Ana Rodríguez",
+        "content": "Había una vez en una selva densa y misteriosa, donde un explorador valiente se adentró en la búsqueda de un tesoro legendario..."
     },
     {
         "id": 2,
-        "title": "El Susurro del Fantasma",
-        "cover": "",
-        "author": "Rodrigo Sombras"
-    }, {
+        "title": "El Viaje del Viajero",
+        "cover": "url_de_la_imagen_2.jpg",
+        "author": "Carlos Gómez",
+        "content": "En un pequeño pueblo, un viajero emprendió un viaje épico para descubrir nuevas tierras, conocer culturas fascinantes y aprender lecciones inolvidables..."
+    },
+    {
         "id": 3,
-        "title": "El Enigma de las Cartas Anónimas",
-        "cover": "",
-        "author": "Beatriz Intriga"
-    },
-    {
-        "id": 4,
-        "title": "El Cuadro Maldito",
-        "cover": "",
-        "author": "Martín Enigma"
-    },
-    {
-        "id": 5,
-        "title": "El Último Baile de Medianoche",
-        "cover": "",
-        "author": "Isabella Misterio"
+        "title": "El Secreto del Viejo Faro",
+        "cover": "url_de_la_imagen_3.jpg",
+        "author": "Elena Martínez",
+        "content": "En la costa, un viejo faro esconde un secreto que cambiará la vida de aquellos que se aventuren a descubrirlo. ¿Qué misterios aguardan en sus oscuros pasillos?..."
     }
 ]

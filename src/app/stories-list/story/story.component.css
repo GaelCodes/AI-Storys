@@ -2,33 +2,31 @@ img {
     height: 100%;
 }
 
+.card-img-overlay {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 .title {
-    position: absolute;
-    top: 2em;
-    left: 2em;
+    text-align: center;
+    margin: 1em;
 }
 
 .author {
-    position: absolute;
-    bottom: 2em;
-    right: 2em;
+    text-align: right;
 }
 
 .content-body {
+    height: 70%;
     background-color: red;
-    height: 36vh;
-    position: absolute;
-    top: 20%;
     background-color: hsla(0, 0%, 0%, 0.513);
     border-radius: 2em;
     padding: 1em;
 }
 
 .content-body .content-text {
-    display: block;
-    max-height: 30vh;
     overflow-y: auto;
-    height: fit-content;
+    height: 100%;
 }
 
 

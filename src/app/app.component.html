@@ -1,20 +1,63 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand text-center">Relatos <br> de un Xtraño</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" routerLink="/stories-list/regular" routerLinkActive="active" aria-current="page">Relatos</a>
-                <a class="nav-link" routerLink="/stories-list/whatsapp" routerLinkActive="active">Relatos de Whatsapp</a>
-                <a class="nav-link" routerLink="/stories-list/freemium" routerLinkActive="active">Relatos con Anuncios</a>
-                <a class="nav-link disabled" routerLink="/stories-list/premium" routerLinkActive="active" aria-disabled="true">Relatos Premium</a>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-center">Relatos <br> de un Xtraño</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" routerLink="/stories-list/regular" routerLinkActive="active" aria-current="page">Relatos</a>
+                    <a class="nav-link" routerLink="/stories-list/whatsapp" routerLinkActive="active">Relatos de Whatsapp</a>
+                    <a class="nav-link" routerLink="/stories-list/freemium" routerLinkActive="active">Relatos con Anuncios</a>
+                    <a class="nav-link" routerLink="/stories-list/premium" routerLinkActive="active" aria-disabled="true">Relatos Premium</a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
 
-<div>
+<main>
     <router-outlet></router-outlet>
-</div>
+</main>
+
+<footer class="row justify-content-end text-center mx-0 mt-5 pt-5">
+    <!-- Copyright -->
+    <section class="col-12 col-md-4 order-md-2">
+        <p class="mb-0 mb-md-2">Desarrollado por</p>
+        <p>&#169; 2023 <b>Abigael Heredia Feliz</b> - Todos los derechos reservados</p>
+    </section>
+
+    <!-- Redes sociales -->
+    <section class="col-12 col-md-4 order-md-3 mb-4 mb-md-0 text-center">
+        <p class="h6">Redes sociales</p>
+        <ul class="my-social-items list-group list-unstyled inline-list list-group-horizontal justify-content-center">
+            <li>
+                <a href="https://github.com/GaelCodes" target="_blank" rel="noopener noreferrer" aria-label="Link to my Github profile">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/gael_codes/" target="_blank" rel="noopener noreferrer" aria-label="Link to my Instagram profile">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/gaelcodes" target="_blank" rel="noopener noreferrer" aria-label="Link to my Twitter profile">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/abigael-heredia/" target="_blank" rel="noopener noreferrer" aria-label="Link to my LinkedIn profile">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Términos y licencias -->
+    <section class="my-politics col-12 col-md-4 d-flex flex-column mb-4">
+        <a href="licenses/privacidad.html" class="mb-4" target="_blank" rel="noopener noreferrer">Política de privacidad</a>
+        <a href="licenses/licenses.html" target="_blank" rel="noopener noreferrer">Terminos y Licencias de terceros</a>
+    </section>
+</footer>

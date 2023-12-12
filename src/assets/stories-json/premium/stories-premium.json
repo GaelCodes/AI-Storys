@@ -1,30 +1,36 @@
 [{
-        "id": 1,
-        "title": "El Secreto del Reloj Olvidado",
-        "cover": "",
-        "author": "Valentina Enigma"
-    },
-    {
-        "id": 2,
-        "title": "El Susurro del Fantasma",
-        "cover": "",
-        "author": "Rodrigo Sombras"
-    }, {
-        "id": 3,
-        "title": "El Enigma de las Cartas Anónimas",
-        "cover": "",
-        "author": "Beatriz Intriga"
-    },
-    {
         "id": 4,
-        "title": "El Cuadro Maldito",
-        "cover": "",
-        "author": "Martín Enigma"
+        "title": "El Misterio del Reloj Antiguo",
+        "cover": "url_de_la_imagen_4.jpg",
+        "author": "Gabriel López",
+        "content": "En un pequeño pueblo, un reloj antiguo esconde un misterio que conecta el pasado y el presente. Quienes descubran sus secretos desentrañarán una historia perdida en el tiempo..."
     },
     {
         "id": 5,
-        "title": "El Último Baile de Medianoche",
-        "cover": "",
-        "author": "Isabella Misterio"
+        "title": "El Último Viaje Espacial",
+        "cover": "url_de_la_imagen_5.jpg",
+        "author": "María Sánchez",
+        "content": "En el futuro lejano, un astronauta embarca en el último viaje espacial hacia un planeta distante. En su travesía, descubre maravillas cósmicas y enfrenta desafíos que desafían la imaginación..."
+    },
+    {
+        "id": 6,
+        "title": "La Puerta Dimensional",
+        "cover": "url_de_la_imagen_6.jpg",
+        "author": "Javier Ramírez",
+        "content": "En un laboratorio secreto, científicos descubren una puerta dimensional que lleva a mundos desconocidos. Al cruzarla, se encuentran con seres extraordinarios y tecnologías inimaginables..."
+    },
+    {
+        "id": 7,
+        "title": "El Enigma de la Biblioteca Olvidada",
+        "cover": "url_de_la_imagen_7.jpg",
+        "author": "Isabel Torres",
+        "content": "En una ciudad antigua, una biblioteca olvidada alberga conocimientos perdidos. Un estudiante curioso tropieza con ella y se sumerge en un laberinto de libros que revelan secretos olvidados por siglos..."
+    },
+    {
+        "id": 8,
+        "title": "El Guardián de las Estrellas",
+        "cover": "url_de_la_imagen_8.jpg",
+        "author": "Luisa Hernández",
+        "content": "En el reino celeste, un guardián vela por las estrellas. Cuando una estrella fugaz pierde su camino, el guardián emprende un viaje para devolverla a su lugar en el firmamento..."
     }
 ]

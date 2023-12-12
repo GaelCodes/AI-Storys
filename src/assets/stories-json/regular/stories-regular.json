@@ -26,5 +26,35 @@
         "title": "El Último Baile de Medianoche",
         "cover": "",
         "author": "Isabella Misterio"
+    },
+
+    {
+        "id": 1,
+        "title": "El Secreto del Reloj Olvidado",
+        "cover": "",
+        "author": "Valentina Enigma"
+    },
+    {
+        "id": 2,
+        "title": "El Susurro del Fantasma",
+        "cover": "",
+        "author": "Rodrigo Sombras"
+    }, {
+        "id": 3,
+        "title": "El Enigma de las Cartas Anónimas",
+        "cover": "",
+        "author": "Beatriz Intriga"
+    },
+    {
+        "id": 4,
+        "title": "El Cuadro Maldito",
+        "cover": "",
+        "author": "Martín Enigma"
+    },
+    {
+        "id": 5,
+        "title": "El Último Baile de Medianoche",
+        "cover": "",
+        "author": "Isabella Misterio"
     }
 ]
